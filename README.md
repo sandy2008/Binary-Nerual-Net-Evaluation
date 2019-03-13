@@ -18,3 +18,16 @@ https://github.com/kunglab/ebnn
 This is the Torch 7.0 implementation of XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks.
 
 https://github.com/allenai/XNOR-Net
+
+### Deep Networks on classification tasks using Torch
+This is a complete training example for BinaryNets using Binary-Backpropagation algorithm as explained in "Binarized Neural Networks: Training Deep Neural Networks with Weights and Activations Constrained to +1 or -1, Matthieu Courbariaux, Itay Hubara, Daniel Soudry, Ran El-Yaniv, Yoshua Bengio' on following datasets: Cifar10/100, SVHN, MNIST
+
+https://github.com/itayhubara/BinaryNet
+
+### Binarized Neural Network (BNN) for pytorch
+
+Binarized Neural Network (BNN) for pytorch This is the pytorch version for the BNN code, fro VGG and resnet models Link to the paper: https://papers.nips.cc/paper/6573-binarized-neural-networks
+
+The code is based on https://github.com/eladhoffer/convNet.pytorch Please install torch and torchvision by following the instructions at: http://pytorch.org/ To run resnet18 for cifar10 dataset use: python main_binary.py --model resnet_binary --save resnet18_binary --dataset cifar10
+
+https://github.com/itayhubara/BinaryNet.pytorch
