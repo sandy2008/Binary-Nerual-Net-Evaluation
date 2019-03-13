@@ -37,3 +37,15 @@ https://github.com/itayhubara/BinaryNet.pytorch
 Matthieu Courbariaux, Yoshua Bengio
 
 https://github.com/uranusx86/BinaryNet-on-tensorflow
+
+### Local Binary Convolutional Neural Networks (LBCNN)
+We propose local binary convolution (LBC), an efficient alternative to convolutional layers in standard convolutional neural networks (CNN). The design principles of LBC are motivated by local binary patterns (LBP). The LBC layer comprises of a set of fixed sparse pre-defined binary convolutional filters that are not updated during the training process, a non-linear activation function and a set of learnable linear weights. The linear weights combine the activated filter responses to approximate the corresponding activated filter responses of a standard convolutional layer. The LBC layer affords significant parameter savings, 9x to 169x in the number of learnable parameters compared to a standard convolutional layer. Furthermore, the sparse and binary nature of the weights also results in up to 9x to 169x savings in model size compared to a standard convolutional layer. We demonstrate both theoretically and experimentally that our local binary convolution layer is a good approximation of a standard convolutional layer. Empirically, CNNs with LBC layers, called local binary convolutional neural networks (LBCNN), achieves performance parity with regular CNNs on a range of visual datasets (MNIST, SVHN, CIFAR-10, and ImageNet) while enjoying significant computational savings.
+
+https://github.com/juefeix/lbcnn.torch
+
+### BMXNet v2: An Open-Source Binary Neural Network Implementation Based on MXNet
+A fork of the deep learning framework mxnet to study and implement quantization and binarization in neural networks.
+
+This project is based on the first version of BMXNet, but is different in that it reuses more of the original MXNet operators. This aim was to have only minimal changes to C++ code to get better maintainability with future versions of mxnet.
+
+https://github.com/hpi-xnor/BMXNet-v2
