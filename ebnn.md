@@ -10,10 +10,38 @@ and
 
 `gcc simple_cifar10.c`
 
+## Play
+```
+bash ./a.out
+
+actual: 5 <> predicted: 3
+actual: 0 == predicted: 0
+actual: 4 == predicted: 4
+actual: 1 == predicted: 1
+actual: 9 == predicted: 9
+actual: 2 == predicted: 2
+actual: 1 == predicted: 1
+actual: 3 == predicted: 3
+actual: 1 == predicted: 1
+actual: 4 == predicted: 4
+actual: 3 == predicted: 3
+actual: 5 == predicted: 5
+actual: 3 == predicted: 3
+actual: 6 == predicted: 6
+actual: 1 == predicted: 1
+actual: 7 <> predicted: 9
+actual: 2 == predicted: 2
+actual: 8 == predicted: 8
+actual: 6 <> predicted: 5
+actual: 9 == predicted: 9
+```
+
 ## Evaluate Time:
 `time for run in {1..1000}; do ./a.out; done`
 
 ## Results
+
+1000 Times of running ./a.out
 
 | Env  | 3.5 GHz Intel Core i7 | Core m3 | Raspberry Pi 3 Model b+ |
 |------|-----------------------|---------|-------------------------|
