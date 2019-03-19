@@ -13,7 +13,11 @@ and
 ## Evaluate Time:
 `time for run in {1..1000}; do ./a.out; done`
 
+## Results
 
+| Env  | 3.5 GHz Intel Core i7 | Core m3 | Raspberry Pi 3 Model b+ |
+|------|-----------------------|---------|-------------------------|
+| Time | 29.097s               | 44.090s | 61.021s                 |
 
 # Theory
 
