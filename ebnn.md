@@ -41,7 +41,13 @@ actual: 9 == predicted: 9
 
 ## Results
 
-1000 Times of running ./a.out
+1000 Times of running ./a.out (MNIST)
+
+| Env  | 3.5 GHz Intel Core i7 | Core m3 | Raspberry Pi 3 Model b+ |
+|------|-----------------------|---------|-------------------------|
+| Time | 10.277s               | 22.904s | 32.168s                 |
+
+1000 Times of running ./a.out (CIFAR-10)
 
 | Env  | 3.5 GHz Intel Core i7 | Core m3 | Raspberry Pi 3 Model b+ |
 |------|-----------------------|---------|-------------------------|
