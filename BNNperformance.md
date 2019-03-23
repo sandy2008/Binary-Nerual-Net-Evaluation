@@ -1,6 +1,9 @@
 # Binarized Neural Networks: Training Neural Networks with Weights and Activations Constrained to +1 or −1
 https://arxiv.org/pdf/1602.02830.pdf 
 
+## Compare with Traditional NN
+https://github.com/mmlind/mnist-1lnn
+
 ## XNOR-Count
 The calculations in the BNN become bit operations, a 32-bit multiplication loses 200 units, and a bit operation loses 1 unit.
 
