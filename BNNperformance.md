@@ -1,6 +1,9 @@
 # Binarized Neural Networks: Training Neural Networks with Weights and Activations Constrained to +1 or −1
 https://arxiv.org/pdf/1602.02830.pdf 
 
+## How to Binarize
+![](./1.png)
+
 ## Compare with Traditional NN
 https://github.com/mmlind/mnist-1lnn
 
