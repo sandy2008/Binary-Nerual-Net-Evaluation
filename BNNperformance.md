@@ -6,6 +6,11 @@ https://github.com/mmlind/mnist-1lnn
 
 https://github.com/mmlind/mnist-dnn
 
+| Method | Mnist-dnn | eBNN    |
+|--------|-----------|---------|
+| Time   | 153.421s  | 10.277s |
+| Acc    | ~96%      | ~93%    |
+
 ## XNOR-Count
 The calculations in the BNN become bit operations, a 32-bit multiplication loses 200 units, and a bit operation loses 1 unit.
 
