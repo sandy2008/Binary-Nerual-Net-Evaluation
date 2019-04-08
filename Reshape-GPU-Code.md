@@ -184,3 +184,6 @@ __global__ void xnor_gemm(unsigned int* A, unsigned int* B, float* C, int m, int
 }
 
 ```
+
+## Reshape the Codes
+__global__
