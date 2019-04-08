@@ -185,5 +185,11 @@ __global__ void xnor_gemm(unsigned int* A, unsigned int* B, float* C, int m, int
 
 ```
 
-## Reshape the Codes
-__global__
+## Difference between global and device functions
+
+Global functions are also called "kernels". It's the functions that you may call from the host side using CUDA kernel call semantics (<<<...>>>).
+
+Device functions can only be called from other device or global functions. __device__ functions cannot be called from host code
+
+## __syncthreads
+one can specify synchronization points in the kernel by calling the __syncthreads() intrinsic function
