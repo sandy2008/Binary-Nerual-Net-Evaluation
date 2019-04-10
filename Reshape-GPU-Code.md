@@ -385,3 +385,65 @@ void xnor_gemm(unsigned int* A, unsigned int* B, float* C, int m, int n, int k) 
     if(col + blockCol* BLOCK_SIZE< k && row + blockRow* BLOCK_SIZE< m) Csub[row*k+col] = -(2*(float)Cvalue-32*n);
 }
 ```
+
+## Error Msg
+```
+run.c:10:20: error: use of undeclared identifier 'blockIdx'
+    int blockRow = blockIdx.y;
+                   ^
+run.c:11:20: error: use of undeclared identifier 'blockIdx'
+    int blockCol = blockIdx.x;
+                   ^
+run.c:14:15: error: use of undeclared identifier 'threadIdx'
+    int row = threadIdx.y;
+              ^
+run.c:15:15: error: use of undeclared identifier 'threadIdx'
+    int col = threadIdx.x;
+              ^
+run.c:83:13: error: use of undeclared identifier 'blockIdx'
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+            ^
+run.c:83:26: error: use of undeclared identifier 'blockDim'
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+                         ^
+run.c:83:39: error: use of undeclared identifier 'threadIdx'
+    int i = blockIdx.x * blockDim.x + threadIdx.x;
+                                      ^
+run.c:90:13: error: use of undeclared identifier 'blockIdx'
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+            ^
+run.c:90:26: error: use of undeclared identifier 'blockDim'
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+                         ^
+run.c:90:39: error: use of undeclared identifier 'threadIdx'
+    int j = blockIdx.x * blockDim.x + threadIdx.x;
+                                      ^
+run.c:93:25: error: use of undeclared identifier 'new'
+        float * array = new float[32];
+                        ^
+run.c:93:28: error: expected ';' at end of declaration
+        float * array = new float[32];
+                           ^
+                           ;
+run.c:93:34: error: expected identifier or '('
+        float * array = new float[32];
+                                 ^
+run.c:98:9: error: use of undeclared identifier 'delete'
+        delete[] array;
+        ^
+run.c:98:16: error: expected expression
+        delete[] array;
+               ^
+run.c:106:21: error: use of undeclared identifier 'new'
+    float * array = new float[32];
+                    ^
+run.c:106:24: error: expected ';' at end of declaration
+    float * array = new float[32];
+                       ^
+                       ;
+run.c:106:30: error: expected identifier or '('
+    float * array = new float[32];
+                             ^
+run.c:124:9: error: use of undeclared identifier 'delete'
+        delete[] array;
+```
