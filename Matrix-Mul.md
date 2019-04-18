@@ -17,7 +17,25 @@ static int bdot(const uint8_t* A, const uint8_t* B, const int N)
   return res;
 }
 ```
+- Test
+```
+static char* test_bdot_1()
+{
+  uint8_t A_in[3] = {1,175,248};
+  uint8_t B_in[3] = {108,178,223};
+  int actual = 1;
+  int N = 21;
+  int comp;
+  char output_msg[] = "\nTEST: bdot_1\nOutput Mismatch: \nComputed=%d, Actual=%d\n";
 
+  /* 21 len vector input */
+  comp = bdot(A_in, B_in, N);
+  sprintf(output_buf, output_msg, comp, actual);
+  mu_assert(output_buf, comp == actual);
+
+  return 0;
+}
+```
 - Benchmark
 ```
 	auto test_gemm = [&]() {
