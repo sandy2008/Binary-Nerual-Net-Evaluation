@@ -2,6 +2,8 @@
 
 - Rewrote
 ```
+#define CEIL_POS(X) ((X-(int)(X)) > 0 ? (int)(X+1) : (int)(X))
+
 static int bdot(const uint8_t* A, const uint8_t* B, const int N)
 {
   int i, num_bytes, res;
