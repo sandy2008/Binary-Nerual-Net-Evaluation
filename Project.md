@@ -15,6 +15,10 @@
 ## Preliminary Evaluation
 - Codes on RasPi
 - Extend Code to use wider INT types and test performacne
+yuxuan$ ./a.out
+Time taken: 8.81s
+Time taken: 5.97s
+
 - Bit by Bit, Int by Int & SIMD
 
 ## Related Work
