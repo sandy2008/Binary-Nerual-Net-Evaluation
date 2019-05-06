@@ -22,6 +22,13 @@ Time taken: 8.81s
 Time taken: 5.97s
 ```
 
+- RasPi
+```
+$ ./a.out
+Time taken: 19.32s
+Time taken: 12.44s
+```
+
 - Bit by Bit, Int by Int & SIMD
 
 ```
