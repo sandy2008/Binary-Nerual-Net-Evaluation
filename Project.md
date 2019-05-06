@@ -30,6 +30,9 @@ Time taken: 12.44s
 ```
 
 - Bit by Bit, Int by Int & SIMD
+- Online Compiler
+https://godbolt.org/
+
 
 ```
 popcnt8(unsigned char):
